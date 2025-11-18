@@ -10,7 +10,13 @@ export default defineConfig({
   },
   preview: {
     host: '0.0.0.0',
-    strictPort: false
+    strictPort: false,
+    allowedHosts: [
+      'multiflow.onrender.com',
+      '.onrender.com',
+      'localhost',
+      '127.0.0.1'
+    ]
   }
 })
 
