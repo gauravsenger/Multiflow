@@ -6,17 +6,13 @@ export default defineConfig({
   server: {
     port: 3000,
     host: '0.0.0.0',
-    open: true
+    open: true,
+    allowedHosts: 'all'
   },
   preview: {
     host: '0.0.0.0',
     strictPort: false,
-    allowedHosts: [
-      'multiflow.onrender.com',
-      '.onrender.com',
-      'localhost',
-      '127.0.0.1'
-    ]
+    allowedHosts: 'all'
   }
 })
 
