@@ -7,4 +7,6 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS
+        value: multiflow.onrender.com,.onrender.com
 
